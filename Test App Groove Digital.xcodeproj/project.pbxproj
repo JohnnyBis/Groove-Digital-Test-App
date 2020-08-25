@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		98B5F89A24F37F0F0023C5B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5F89924F37F0F0023C5B9 /* AppDelegate.swift */; };
+		98B5F89F24F37F0F0023C5B9 /* Test_App_Groove_Digital.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 98B5F89D24F37F0F0023C5B9 /* Test_App_Groove_Digital.xcdatamodeld */; };
+		98B5F8A324F37F110023C5B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98B5F8A224F37F110023C5B9 /* Assets.xcassets */; };
+		98B5F8A624F37F110023C5B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98B5F8A524F37F110023C5B9 /* Preview Assets.xcassets */; };
+		98B5F8A924F37F110023C5B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98B5F8A724F37F110023C5B9 /* LaunchScreen.storyboard */; };
+		98B5F8B424F4209A0023C5B9 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5F8B324F4209A0023C5B9 /* HTTPMethod.swift */; };
+		98B5F8B624F420F10023C5B9 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5F8B524F420F10023C5B9 /* NetworkError.swift */; };
+		98B5F8B824F421FF0023C5B9 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5F8B724F421FF0023C5B9 /* NetworkResponse.swift */; };
+		98B5F8BC24F422410023C5B9 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5F8BB24F422410023C5B9 /* Result.swift */; };
+		98B5F8BE24F423850023C5B9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5F8BD24F423850023C5B9 /* NetworkManager.swift */; };
+		98B5F8C224F428CC0023C5B9 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5F8C124F428CC0023C5B9 /* Router.swift */; };
+		98B5F8C424F434F10023C5B9 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98B5F8C324F434F10023C5B9 /* Home.storyboard */; };
+		98B5F8CA24F436230023C5B9 /* DatePickerPopup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98B5F8C924F436230023C5B9 /* DatePickerPopup.storyboard */; };
+		98B5F8CC24F438700023C5B9 /* DatePickerPopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5F8CB24F438700023C5B9 /* DatePickerPopupVC.swift */; };
+		98B5F8CF24F45B490023C5B9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5F8CE24F45B490023C5B9 /* HomeViewController.swift */; };
+		98B5F8D124F462C40023C5B9 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5F8D024F462C40023C5B9 /* GraphView.swift */; };
+		98B5F8D424F473930023C5B9 /* AnalyticsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5F8D324F473930023C5B9 /* AnalyticsItem.swift */; };
+		EF3A7215C89A3DBF916D1A1C /* Pods_Test_App_Groove_Digital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCB5D7D97C0C24F27083658 /* Pods_Test_App_Groove_Digital.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		98B5F89624F37F0F0023C5B9 /* Test App Groove Digital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test App Groove Digital.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98B5F89924F37F0F0023C5B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		98B5F89E24F37F0F0023C5B9 /* Test_App_Groove_Digital.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Test_App_Groove_Digital.xcdatamodel; sourceTree = "<group>"; };
+		98B5F8A224F37F110023C5B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98B5F8A524F37F110023C5B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		98B5F8A824F37F110023C5B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		98B5F8AA24F37F110023C5B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98B5F8B324F4209A0023C5B9 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		98B5F8B524F420F10023C5B9 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		98B5F8B724F421FF0023C5B9 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		98B5F8BB24F422410023C5B9 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		98B5F8BD24F423850023C5B9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		98B5F8C124F428CC0023C5B9 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		98B5F8C324F434F10023C5B9 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		98B5F8C924F436230023C5B9 /* DatePickerPopup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DatePickerPopup.storyboard; sourceTree = "<group>"; };
+		98B5F8CB24F438700023C5B9 /* DatePickerPopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerPopupVC.swift; sourceTree = "<group>"; };
+		98B5F8CE24F45B490023C5B9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		98B5F8D024F462C40023C5B9 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		98B5F8D324F473930023C5B9 /* AnalyticsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsItem.swift; sourceTree = "<group>"; };
+		BD1FE502453D12B5829AFA63 /* Pods-Test App Groove Digital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test App Groove Digital.debug.xcconfig"; path = "Target Support Files/Pods-Test App Groove Digital/Pods-Test App Groove Digital.debug.xcconfig"; sourceTree = "<group>"; };
+		DA2DE8CD752895529628715A /* Pods-Test App Groove Digital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test App Groove Digital.release.xcconfig"; path = "Target Support Files/Pods-Test App Groove Digital/Pods-Test App Groove Digital.release.xcconfig"; sourceTree = "<group>"; };
+		DBCB5D7D97C0C24F27083658 /* Pods_Test_App_Groove_Digital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_App_Groove_Digital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98B5F89324F37F0F0023C5B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF3A7215C89A3DBF916D1A1C /* Pods_Test_App_Groove_Digital.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BF507B998CAFA7492090DDD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD1FE502453D12B5829AFA63 /* Pods-Test App Groove Digital.debug.xcconfig */,
+				DA2DE8CD752895529628715A /* Pods-Test App Groove Digital.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		86F9A6A4AD3BF59E6475DD10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBCB5D7D97C0C24F27083658 /* Pods_Test_App_Groove_Digital.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98B5F88D24F37F0F0023C5B9 = {
+			isa = PBXGroup;
+			children = (
+				98B5F89824F37F0F0023C5B9 /* Test App Groove Digital */,
+				98B5F89724F37F0F0023C5B9 /* Products */,
+				0BF507B998CAFA7492090DDD /* Pods */,
+				86F9A6A4AD3BF59E6475DD10 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		98B5F89724F37F0F0023C5B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98B5F89624F37F0F0023C5B9 /* Test App Groove Digital.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98B5F89824F37F0F0023C5B9 /* Test App Groove Digital */ = {
+			isa = PBXGroup;
+			children = (
+				98B5F89924F37F0F0023C5B9 /* AppDelegate.swift */,
+				98B5F8B024F41F810023C5B9 /* Networking */,
+				98B5F8D224F4733A0023C5B9 /* Model */,
+				98B5F8C624F435D40023C5B9 /* Popup */,
+				98B5F8B124F41F950023C5B9 /* View Controllers */,
+				98B5F8CD24F45AC40023C5B9 /* Storyboard */,
+				98B5F8A224F37F110023C5B9 /* Assets.xcassets */,
+				98B5F8A724F37F110023C5B9 /* LaunchScreen.storyboard */,
+				98B5F8AA24F37F110023C5B9 /* Info.plist */,
+				98B5F89D24F37F0F0023C5B9 /* Test_App_Groove_Digital.xcdatamodeld */,
+				98B5F8A424F37F110023C5B9 /* Preview Content */,
+			);
+			path = "Test App Groove Digital";
+			sourceTree = "<group>";
+		};
+		98B5F8A424F37F110023C5B9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				98B5F8A524F37F110023C5B9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		98B5F8B024F41F810023C5B9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				98B5F8C024F428BC0023C5B9 /* EndPoint */,
+				98B5F8BF24F428910023C5B9 /* Manager */,
+				98B5F8B224F420840023C5B9 /* HTTP */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		98B5F8B124F41F950023C5B9 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				98B5F8CE24F45B490023C5B9 /* HomeViewController.swift */,
+				98B5F8D024F462C40023C5B9 /* GraphView.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		98B5F8B224F420840023C5B9 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				98B5F8B324F4209A0023C5B9 /* HTTPMethod.swift */,
+				98B5F8B524F420F10023C5B9 /* NetworkError.swift */,
+				98B5F8B724F421FF0023C5B9 /* NetworkResponse.swift */,
+				98B5F8BB24F422410023C5B9 /* Result.swift */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		98B5F8BF24F428910023C5B9 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				98B5F8BD24F423850023C5B9 /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		98B5F8C024F428BC0023C5B9 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				98B5F8C124F428CC0023C5B9 /* Router.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		98B5F8C624F435D40023C5B9 /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				98B5F8C924F436230023C5B9 /* DatePickerPopup.storyboard */,
+				98B5F8CB24F438700023C5B9 /* DatePickerPopupVC.swift */,
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
+		98B5F8CD24F45AC40023C5B9 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				98B5F8C324F434F10023C5B9 /* Home.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		98B5F8D224F4733A0023C5B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				98B5F8D324F473930023C5B9 /* AnalyticsItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98B5F89524F37F0F0023C5B9 /* Test App Groove Digital */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98B5F8AD24F37F110023C5B9 /* Build configuration list for PBXNativeTarget "Test App Groove Digital" */;
+			buildPhases = (
+				0C9D61F76D50B6BF7E0A1D34 /* [CP] Check Pods Manifest.lock */,
+				98B5F89224F37F0F0023C5B9 /* Sources */,
+				98B5F89324F37F0F0023C5B9 /* Frameworks */,
+				98B5F89424F37F0F0023C5B9 /* Resources */,
+				CEF21CFBBEA80AB14E239DDA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Test App Groove Digital";
+			productName = "Test App Groove Digital";
+			productReference = 98B5F89624F37F0F0023C5B9 /* Test App Groove Digital.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98B5F88E24F37F0F0023C5B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = Zodaj;
+				TargetAttributes = {
+					98B5F89524F37F0F0023C5B9 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 98B5F89124F37F0F0023C5B9 /* Build configuration list for PBXProject "Test App Groove Digital" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98B5F88D24F37F0F0023C5B9;
+			productRefGroup = 98B5F89724F37F0F0023C5B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98B5F89524F37F0F0023C5B9 /* Test App Groove Digital */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98B5F89424F37F0F0023C5B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98B5F8CA24F436230023C5B9 /* DatePickerPopup.storyboard in Resources */,
+				98B5F8A924F37F110023C5B9 /* LaunchScreen.storyboard in Resources */,
+				98B5F8A624F37F110023C5B9 /* Preview Assets.xcassets in Resources */,
+				98B5F8A324F37F110023C5B9 /* Assets.xcassets in Resources */,
+				98B5F8C424F434F10023C5B9 /* Home.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C9D61F76D50B6BF7E0A1D34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Test App Groove Digital-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEF21CFBBEA80AB14E239DDA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test App Groove Digital/Pods-Test App Groove Digital-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test App Groove Digital/Pods-Test App Groove Digital-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Test App Groove Digital/Pods-Test App Groove Digital-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98B5F89224F37F0F0023C5B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98B5F8C224F428CC0023C5B9 /* Router.swift in Sources */,
+				98B5F8BC24F422410023C5B9 /* Result.swift in Sources */,
+				98B5F8D424F473930023C5B9 /* AnalyticsItem.swift in Sources */,
+				98B5F8B624F420F10023C5B9 /* NetworkError.swift in Sources */,
+				98B5F8D124F462C40023C5B9 /* GraphView.swift in Sources */,
+				98B5F89F24F37F0F0023C5B9 /* Test_App_Groove_Digital.xcdatamodeld in Sources */,
+				98B5F8BE24F423850023C5B9 /* NetworkManager.swift in Sources */,
+				98B5F8CF24F45B490023C5B9 /* HomeViewController.swift in Sources */,
+				98B5F8B824F421FF0023C5B9 /* NetworkResponse.swift in Sources */,
+				98B5F89A24F37F0F0023C5B9 /* AppDelegate.swift in Sources */,
+				98B5F8B424F4209A0023C5B9 /* HTTPMethod.swift in Sources */,
+				98B5F8CC24F438700023C5B9 /* DatePickerPopupVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		98B5F8A724F37F110023C5B9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98B5F8A824F37F110023C5B9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98B5F8AB24F37F110023C5B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		98B5F8AC24F37F110023C5B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98B5F8AE24F37F110023C5B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD1FE502453D12B5829AFA63 /* Pods-Test App Groove Digital.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Test App Groove Digital/Preview Content\"";
+				DEVELOPMENT_TEAM = UNZ8Q3YU3G;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Test App Groove Digital/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Zodaj.Test-App-Groove-Digital";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98B5F8AF24F37F110023C5B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA2DE8CD752895529628715A /* Pods-Test App Groove Digital.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Test App Groove Digital/Preview Content\"";
+				DEVELOPMENT_TEAM = UNZ8Q3YU3G;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Test App Groove Digital/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Zodaj.Test-App-Groove-Digital";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98B5F89124F37F0F0023C5B9 /* Build configuration list for PBXProject "Test App Groove Digital" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98B5F8AB24F37F110023C5B9 /* Debug */,
+				98B5F8AC24F37F110023C5B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98B5F8AD24F37F110023C5B9 /* Build configuration list for PBXNativeTarget "Test App Groove Digital" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98B5F8AE24F37F110023C5B9 /* Debug */,
+				98B5F8AF24F37F110023C5B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		98B5F89D24F37F0F0023C5B9 /* Test_App_Groove_Digital.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				98B5F89E24F37F0F0023C5B9 /* Test_App_Groove_Digital.xcdatamodel */,
+			);
+			currentVersion = 98B5F89E24F37F0F0023C5B9 /* Test_App_Groove_Digital.xcdatamodel */;
+			path = Test_App_Groove_Digital.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 98B5F88E24F37F0F0023C5B9 /* Project object */;
+}

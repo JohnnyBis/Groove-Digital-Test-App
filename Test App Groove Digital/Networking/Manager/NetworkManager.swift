@@ -46,7 +46,7 @@ struct NetworkManager {
                         completion(objectResponse, Result.success)
                     }
                 case .failure:
-                    completion([nil], Result.failure(NetworkError.unableToDecode.rawValue))
+                    completion([nil], result)
                 }
             }
         }
